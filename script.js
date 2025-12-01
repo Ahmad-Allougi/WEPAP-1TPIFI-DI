@@ -2,7 +2,7 @@
 function changH1() {
  document.getElementById("h1").innerHTML = "hello from js";   
 };
-addEventListener("load",changH1);
+addEventListener("load",changH1);1
 */
 
 //JQuery version
@@ -31,6 +31,7 @@ function start() {
   let newInput = $("<input>");
   $("body").append(newInput);
   newInput.attr("id","numA");
+   newInput.attr("type","number");
   //adds second label
   let newLabelElement2 = $("<label>");
   newLabelElement2.html("Please type B ");
@@ -39,6 +40,7 @@ function start() {
   let newInput2 = $("<input>");
   $("body").append(newInput2);
   newInput2.attr("id","numB");
+  newInput2.attr("type","number");
   //adds button
   let btn = $("<button>");
   btn.html("Add");
